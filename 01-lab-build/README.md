@@ -129,13 +129,13 @@ Verified by opening `Windows Logs > Security`, filtering for Event ID 4688, and 
 
 ![4688 with command line](screenshots/4688-command-line.png)
 
-**Event IDs now captured:** 4688 (process create, with command line), 4624 (successful logon), 4625 (failed logon).
+**Event IDs now captured:** 4688 (process create, with command line) — verified with evidence. 4624 (successful logon) and 4625 (failed logon) were enabled via the same `auditpol` command but not yet triggered and confirmed; generating and verifying both is planned for Project 2.
 
 ---
 
 ## Findings
 
-- The lab now captures process creation, logon events, and the command-line text used to run programs, along with PowerShell activity via script block logging.
+- The lab now captures process creation with command-line text (verified) and PowerShell activity via script block logging (verified). Logon auditing (4624/4625) is enabled but not yet triggered and confirmed — that verification is planned for Project 2.
 - Learned that Windows blocks ICMP by default, so a silent ping doesn't necessarily mean a host is down.
 - Learned that enabling 4688 with `auditpol` alone only shows that a program ran, not what command it used — a separate `reg add` command was needed to include the command line.
 - Learned that a command saying "success" doesn't prove logging actually works — each source (Sysmon, PowerShell, and audit policy) had to be checked in its own Event Viewer log against a real event before it could be trusted.
