@@ -9,7 +9,7 @@ The lab is an isolated VirtualBox environment with a Windows victim machine and 
 | # | Project | Core skill |
 |---|---------|-----------|
 | 1 | [Lab Build](01-lab-build/) | Building and documenting a monitored environment |
-| 2 | Baseline Normal Activity | Knowing what normal looks like |
+| 2 | [Baseline Normal Activity](02-baseline/) | Knowing what normal looks like |
 | 3 | Detect an Nmap Scan | Spotting reconnaissance |
 | 4 | Detect Malicious PowerShell | Reading what a script did |
 | 5 | Detect a Failed-Logon Attack | Spotting brute force |
