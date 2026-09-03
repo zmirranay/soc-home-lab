@@ -92,6 +92,8 @@ Enabled via the registry (this VM is Windows 10 Home, which has no Group Policy 
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging" /v EnableScriptBlockLogging /t REG_DWORD /d 1 /f
 ```
 
+![Enable PowerShell script block logging](screenshots/powershell-enable-command.png)
+
 Ran a test command to verify logging was capturing PowerShell activity:
 
 ```
