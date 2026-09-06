@@ -10,7 +10,7 @@ The lab is an isolated VirtualBox environment with a Windows victim machine and 
 |---|---------|-----------|
 | 1 | [Lab Build](01-lab-build/) | Building and documenting a monitored environment |
 | 2 | [Baseline Normal Activity](02-baseline/) | Knowing what normal looks like |
-| 3 | Detect an Nmap Scan | Spotting reconnaissance |
+| 3 | [Detect an Nmap Scan](03-nmap-scan/) | Spotting reconnaissance |
 | 4 | Detect Malicious PowerShell | Reading what a script did |
 | 5 | Detect a Failed-Logon Attack | Spotting brute force |
 | 6 | Build a Detection Rule | Automating detection (SIEM) |
