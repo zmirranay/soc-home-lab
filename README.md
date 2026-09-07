@@ -4,6 +4,8 @@ A hands-on, defensive security home lab built to practise the core skills of a S
 
 The lab is an isolated VirtualBox environment with a Windows victim machine and a Kali attacker machine, fully instrumented with logging (Sysmon, PowerShell script block logging, and Windows audit policy). Each project runs an attack on purpose, then hunts for the evidence it left behind in the logs.
 
+> _Note on process: this is a guided learning project. I used AI as a mentor to explain concepts and check my understanding, but every write-up here is in my own words, and I can walk through the reasoning behind each finding._
+
 ## Projects
 
 | # | Project | Core skill |
