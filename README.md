@@ -14,8 +14,8 @@ The lab is an isolated VirtualBox environment with a Windows victim machine and 
 | 2 | [Baseline Normal Activity](02-baseline/) | Knowing what normal looks like |
 | 3 | [Detect an Nmap Scan](03-nmap-scan/) | Spotting reconnaissance |
 | 4 | [Detect Malicious PowerShell](04-powershell/) | Reading what a script did |
-| 5 | Detect a Failed-Logon Attack | Spotting brute force |
-| 6 | Build a Detection Rule | Automating detection (SIEM) |
+| 5 | [Detect a Failed-Logon Attack](05-failed-logon/) | Spotting brute force |
+| 6 | [Build a Detection Rule](06-splunk-detection-rule/) | Automating detection (SIEM) |
 
 Each project is written up in **Scenario / Findings / Escalation** format.
 
