@@ -34,4 +34,4 @@ Both VMs sit on an isolated VirtualBox Internal Network so that any malicious ac
 - **Sysmon** (Microsoft Sysinternals) with the SwiftOnSecurity config — detailed process and network logging
 - **Windows Event Viewer** — reading the logs
 - **PowerShell script block logging** and **Windows audit policy** — additional log sources
-- **Splunk Free** (planned) — SIEM for automated detection
+- **Splunk Free** — SIEM for automated detection
