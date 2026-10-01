@@ -1,7 +1,7 @@
 # Lab 6: Automatic Detection Rule for Failed Logons (Splunk)
 
 ## Scenario
-In Projects 3 to 5 I found each attack by reading the logs by hand. In Project 6, Splunk collects the logs in one place and a saved rule raises an alert automatically.
+In Labs 3 to 5 I found each attack by reading the logs by hand. In Lab 6, Splunk collects the logs in one place and a saved rule raises an alert automatically.
 
 This matters because a real SOC watches thousands of computers. Reading logs by hand would take forever and you'd have to go onto each computer to see its logs, whereas Splunk captures the logs from every computer in one place.
 
@@ -13,7 +13,7 @@ This matters because a real SOC watches thousands of computers. Reading logs by 
 ![Security log input](screenshots/splunk-security-log-input.png)
 
 ## Test data
-The Project 5 failed-logon burst was already in the Security log: **27 × Event ID 4625** in total.
+The Lab 5 failed-logon burst was already in the Security log: **27 × Event ID 4625** in total.
 
 ![4625 search](screenshots/splunk-4625-search.png)
 
@@ -42,7 +42,7 @@ index=main EventCode=4625
 Most failed logons are just noise, a one-time thing. My own data showed this: 8 failures came within one 10-minute window, while the other failures were at different timestamps, only 1 to 3 at a time. Alerting on all of them leads to **alert fatigue**.
 
 ### Why count by the target account, not the Subject?
-The target is the account being guessed by the attacker. In my data the Subject changed depending on how the login was attempted: `WINDOWS10-VICTI$` for failures typed at the login screen, `vboxuser` for my Project 5 burst, while the target was `vboxuser` both times. If the rule counted by Subject, one attack could be split across different Subject names, each count could stay under 5, and the attack would be missed.
+The target is the account being guessed by the attacker. In my data the Subject changed depending on how the login was attempted: `WINDOWS10-VICTI$` for failures typed at the login screen, `vboxuser` for my Lab 5 burst, while the target was `vboxuser` both times. If the rule counted by Subject, one attack could be split across different Subject names, each count could stay under 5, and the attack would be missed.
 
 ![Target account field](screenshots/splunk-target-account-field.png)
 
@@ -79,5 +79,5 @@ When the alert fires I would check for an Event ID 4624 after the failures to se
 - I only tested the threshold on one computer. A company has many computers, and 5 failures could just be one person trying to reset their password and failing to log on. That would be a false positive. The threshold would need testing on the company's own data.
 - My rule wouldn't catch a **password spray**, because each account only gets one attempt, which never reaches the threshold of 5. To catch it, I'd count how many different accounts one IP tried to log into within 10 minutes.
 - The rule uses fixed 10-minute buckets, so an attack split across two buckets could be missed. A **sliding window** would trigger even if it's split, as long as it's within 10 minutes.
-- The test data is the **simulated** log pattern from Project 5 (local `runas`, Logon Type 2), not a real brute-force tool.
+- The test data is the **simulated** log pattern from Lab 5 (local `runas`, Logon Type 2), not a real brute-force tool.
 - Built on the Enterprise Trial licence; on Splunk Free the alert would not fire.
