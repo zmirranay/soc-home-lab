@@ -1,4 +1,4 @@
-# Project 5 — Detect a Failed-Logon Attack (Event ID 4625 / 4624)
+# Lab 5 — Detect a Failed-Logon Attack (Event ID 4625 / 4624)
 
 ## Scenario
 I ran repeated failed logons locally in PowerShell using `runas`, which generated a password prompt each time. I entered wrong passwords to generate failed logons (Event ID 4625) in the Windows Security log. I then ran the command again with the correct password, which opened a cmd window, and found the successful logon (Event ID 4624) in the Security log.
