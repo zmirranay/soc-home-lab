@@ -1,4 +1,4 @@
-# Project 2: Baseline Normal Activity
+# Lab 2: Baseline Normal Activity
 
 > A defined set of normal user actions on the Windows VM, used to record what routine logon and process activity looks like in the logs before any attack is introduced.
 
