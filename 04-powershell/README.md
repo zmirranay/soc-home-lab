@@ -1,4 +1,4 @@
-# Project 4: Detect Malicious PowerShell via Script Block Logging (Event ID 4104)
+# Lab 4: Detect Malicious PowerShell via Script Block Logging (Event ID 4104)
 
 ## Scenario
 
