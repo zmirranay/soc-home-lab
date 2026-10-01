@@ -2,7 +2,7 @@
 
 A hands-on, defensive security home lab built to practise the core skills of a SOC (Security Operations Centre) analyst: detecting attacks in Windows logs, log analysis, and triage.
 
-The lab is an isolated VirtualBox environment with a Windows victim machine and a Kali attacker machine, fully instrumented with logging (Sysmon, PowerShell script block logging, and Windows audit policy). Each project runs an attack on purpose, then hunts for the evidence it left behind in the logs.
+The lab is an isolated VirtualBox environment with a Windows victim machine and a Kali attacker machine, fully instrumented with logging (Sysmon, PowerShell script block logging, and Windows audit policy). Each lab runs an attack on purpose, then hunts for the evidence it left behind in the logs.
 
 > _Note on process: this is a guided learning project. I used AI as a mentor to explain concepts and check my understanding, but every write-up here is in my own words, and I can walk through the reasoning behind each finding._
 
@@ -17,7 +17,7 @@ The lab is an isolated VirtualBox environment with a Windows victim machine and 
 | 5 | [Detect a Failed-Logon Attack](05-failed-logon/) | Spotting brute force |
 | 6 | [Build a Detection Rule](06-splunk-detection-rule/) | Automating detection (SIEM) |
 
-Each project is written up in **Scenario / Findings / Escalation** format.
+Each Lab is written up in **Scenario / Findings / Escalation** format.
 
 ## Lab Design
 
@@ -34,4 +34,4 @@ Both VMs sit on an isolated VirtualBox Internal Network so that any malicious ac
 - **Sysmon** (Microsoft Sysinternals) with the SwiftOnSecurity config — detailed process and network logging
 - **Windows Event Viewer** — reading the logs
 - **PowerShell script block logging** and **Windows audit policy** — additional log sources
-- **Splunk Free** — SIEM for automated detection
+- **Splunk Enterprise (Trial) — SIEM for automated detection
