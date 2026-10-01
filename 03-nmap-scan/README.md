@@ -1,4 +1,4 @@
-# Project 3: Detect an Nmap Scan
+# Lab 3: Detect an Nmap Scan
 
 > An Nmap SYN scan was run from the Kali attacker against the Windows victim, then hunted down in the logs. The evidence turned up in the firewall log, not in Sysmon where I first looked.
 
