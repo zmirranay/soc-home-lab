@@ -1,4 +1,4 @@
-# Project 6: Automatic Detection Rule for Failed Logons (Splunk)
+# Lab 6: Automatic Detection Rule for Failed Logons (Splunk)
 
 ## Scenario
 In Projects 3 to 5 I found each attack by reading the logs by hand. In Project 6, Splunk collects the logs in one place and a saved rule raises an alert automatically.
