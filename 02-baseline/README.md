@@ -6,7 +6,7 @@
 
 ## Scenario
 
-Baselining shows what a normal activity looks like in a log on a quiet machine. Without it, you wouldn't be able to know what events are from Project 3 (the attack) or ones that happen regularly, since you would have nothing to compare them with.
+Baselining shows what a normal activity looks like in a log on a quiet machine. Without it, you wouldn't be able to know what events are from Lab 3 (the attack) or ones that happen regularly, since you would have nothing to compare them with.
 
 ---
 
@@ -62,12 +62,12 @@ The Security log's 4688 event for the same `ipconfig.exe` process also shows a p
 
 ## Escalation / Next Steps
 
-This baseline is the reference point for the detection projects that follow:
+This baseline is the reference point for the detection Labs that follow:
 
-- **Project 3:** detect an Nmap scan — anomalous Sysmon network events against this quiet baseline
-- **Project 4:** detect malicious PowerShell (4104)
-- **Project 5:** detect a failed-logon attack (4625 pattern) — compare a real attack's failed-logon pattern against the single 4625 baselined here
-- **Project 6:** build an automatic detection rule (SIEM)
+- **Lab 3:** detect an Nmap scan — anomalous Sysmon network events against this quiet baseline
+- **Lab 4:** detect malicious PowerShell (4104)
+- **Lab 5:** detect a failed-logon attack (4625 pattern) — compare a real attack's failed-logon pattern against the single 4625 baselined here
+- **Lab 6:** build an automatic detection rule (SIEM)
 
 ---
 
