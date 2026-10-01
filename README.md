@@ -6,9 +6,9 @@ The lab is an isolated VirtualBox environment with a Windows victim machine and 
 
 > _Note on process: this is a guided learning project. I used AI as a mentor to explain concepts and check my understanding, but every write-up here is in my own words, and I can walk through the reasoning behind each finding._
 
-## Projects
+## Labs
 
-| # | Project | Core skill |
+| # | Lab | Core skill |
 |---|---------|-----------|
 | 1 | [Lab Build](01-lab-build/) | Building and documenting a monitored environment |
 | 2 | [Baseline Normal Activity](02-baseline/) | Knowing what normal looks like |
