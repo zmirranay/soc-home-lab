@@ -1,4 +1,4 @@
-# Project 1: SOC Home Lab Build
+# Lab 1: SOC Home Lab Build
 
 > A documented, defensive-focused detection lab built in VirtualBox: an isolated attacker/victim network with full Windows logging (Sysmon, PowerShell script block logging, and Windows audit policy) enabled and verified.
 
